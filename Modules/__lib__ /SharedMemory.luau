@@ -5,7 +5,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Modules = script:WaitForChild("Modules")
 local Promise = require(ReplicatedStorage.Packages.Promise)
 
-export type setSharedTable= {
+export type setSharedTable = {
 	Name: string;
 	Value: any;
 }
