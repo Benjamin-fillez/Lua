@@ -63,7 +63,7 @@ end
 function util:SyncSharedTable(__data__ : setSharedTableParallel)
 	assert(
 		type(__data__) == "table" and type(__data__.Name) == "string" and type(__data__.Value) ~= "nil" and __data__.ScriptSourceInstance:IsA("Actor"),
-		"[__data__] arg is not a setSharedTableInformation."
+		"[__data__] arg is not a setSharedTableParallel."
 	)
 	if(not __data__.ScriptSourceInstance:IsA("Actor")) then return warn("Synchronize,Desynchronize can only be called within a actor") end
 	task.synchronize()
